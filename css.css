@@ -1,0 +1,299 @@
+html{
+
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#navbar{
+    width: 100%;
+    height: 120px;
+    background: 
+    linear-gradient(
+        to right,
+        gray,rgb(68, 63, 63), gray);
+    display: flex;
+
+    justify-content: space-between;
+    /* position: sticky;
+    top: 0; */
+
+    align-items: center;
+        
+}
+
+#box{
+
+    width: auto;
+    height: 120px;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#profile{
+    width: 70px;
+    height: 60%;
+    background-color: yellow;
+    border-radius: 50%;
+    background-image: url('images/6.jpg');
+    background-size: cover;
+
+}
+
+
+#name{
+    width: 100%;
+    height: 20%;
+    color: white;
+    border: 2px dotted black;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#name>h2{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+ul{
+    display: flex;
+    padding: 1px;
+}
+
+#mylink>li{
+    list-style-type: none;
+    padding-right: 1rem;
+}
+
+#mylink>li>a{
+
+    text-decoration: none;
+    color: white;
+    font-size: 2.6rem;
+}
+
+@media (max-width:28.75em){ 
+
+    #mylink>li>a{
+        font-size: 1.7rem;
+    }
+
+}
+
+@media (max-width:22.5em){ 
+
+     #box{
+         display: none;
+     }
+
+     #navbar{
+         justify-content: center;
+     }
+      
+
+}
+
+#welcome{
+
+    width: 100%;
+    height: 80vh;
+    background: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#box>p{
+
+    font-size: 4rem;
+    color: white;
+    font-style: italic;
+    font-weight: 1;
+}
+
+
+#box>h2{
+
+    font-size: 5rem;
+    color:white;
+
+    
+}
+
+@media (max-width: 28.75em) {
+    
+#welcome>p{
+
+    font-size: 2rem;    
+}
+#welcome>h2{
+
+    font-size: 3rem;   
+}
+
+}
+
+#projects{
+    width:100%;
+    height: auto;
+    text-align:center;
+    padding-top:1rem;
+    background: rgb(65, 38, 4);
+}
+
+#projects-header{
+
+    max-width: 640px;
+    margin: auto;
+    margin-bottom: 6rem;
+    border-bottom: 0.6rem solid white;
+    font-size: 3rem;
+    color: white;
+}
+
+
+#projects-grid{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width:100%;
+    max-width: 1280px;
+    margin:  0 auto;
+    margin-bottom: 6rem;
+}
+
+.project{
+
+    width: 100%;
+    height: 50rem;
+    background: #303841;
+}
+
+
+.project>img{
+    
+    width: 100%;
+    height: calc(100% - 6.8rem);
+    object-fit: cover;
+
+}
+
+
+#project-title{
+
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+    color: white;
+}
+
+
+#contact{
+    width: 100%;
+    height: 80vh;
+    background-color: #303841;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#contact-header>h2{
+
+    font-size: 6rem;
+    color: white;
+    
+}
+
+#contact-header > p{
+
+    font-size: 4rem;
+    color: silver;
+    font-style: italic;
+
+}
+
+@media (max-width: 28.75em) {
+
+    
+#contact-header>h2{
+
+    font-size: 3rem;
+    
+    
+}
+
+}
+
+#contact-links{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    max-width: 980px;
+    flex-wrap: wrap;
+}
+
+.link-item{
+
+    font-size: 3rem;
+    color:white;
+    text-decoration: none;
+    margin-right: 3rem;
+    transition: transform 0.3s ease-out;
+}
+
+.link-item:hover{
+    transform: translateY(8px);
+}
+
+
+footer{
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: #303841;
+    border-top: 4px solid red;
+    color: white;
+
+}
+
+footer>p{
+
+    font-size: 2rem;
+}
+
+footer>p>a {
+    text-decoration: none;
+    color: white;
+
+}
+
+@media (max-width: 28.75em){
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
